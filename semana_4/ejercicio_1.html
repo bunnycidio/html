@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA DE FORMULARIO</title>
+</head>
+
+<body style="background-color: rgba(226, 180, 212, 0.945);">
+    <header>
+        <img src="incap.jpeg" width="100" alt="incap">
+        <h1>LISTAS EN HTML</h1>
+        <h2>MENU NAVEGACION</h2>
+    </header>
+    <nav>
+        <ul>
+            <li type="disc" style="color: rgb(13, 11, 158);">HOME</li>
+            <li type="square">Productmos</li>
+            <li type="circle">Servicios</li>
+            <li>Contactos</li>
+            </ul>
+            </nav>
+            <section>
+                
+                <form action="datos.php" method="post"></form>
+                <fieldset>
+                    <label> NOMBRE COMPLETO</label>
+                    <input name="nombre" type="text" placeholder="Ingrese se nombre completo" required="">
+                    <br><br>
+            
+                    <label> E-mail</label>
+                    <input name="email" type="email" placeholder="Ingrese se Email" required="">
+                    <br><br>
+            
+                    <label>Contraseña</label>
+                    <input name="contraseña" type="password" placeholder="Ingrese su contraseña" required="">
+                    <br><br>
+            
+                    <label>Selecciona tus hobbies:
+                    </label>
+                    <br>
+                    <input name="dibujo" type="checkbox">dibujo<br>
+                    <input name="videojuegos" type="checkbox">videojuegos<br>
+                    <input name="Deporte" type="checkbox">Deporte<br>
+                    <br>
+                    <br>
+            
+                    <label>Estado civil</label><br>
+                    <input name="estcivil" type="radio" value="casado">Casado(a)<br>
+                    <input name="estcivil" type="radio" value="soltero">Soltero(a)<br>
+                    <input name="estcivil" type="radio" value="viudo">Viudo(a)<br>
+                    <br>
+                    <br>
+            
+                    <label>PROGRAMAS TECNICOS</label>
+                    <select name="select">
+                        <option>Seleccione programa...</option>
+                        <option>Sistemas</option>
+                        <option>Diseño grafico</option>
+                        <option>Contabilidad</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label>Tu comentario:</label><br>
+                    <textarea name="mensaje" cols="40" rows="5"></textarea>
+                </fieldset>
+                <br><br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+                <br>
+                <br>
+                </forms>
+            </section>
+            <footer>
+                Derechos reservados &copy;2022&#64;bunnycidio estuvo aqui 
+            </footer>
+            </body>
+            
+            </html>
