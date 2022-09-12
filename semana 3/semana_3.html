@@ -8,10 +8,16 @@
     <meta name="description" content="Pagina web de elementos">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style> 
+    .responsive{
+        max-width: 100%;
+        height: auto;
+    }
+    </style>
 </head>
 
 <body bgcolor="pink">
-    <marquee bgcolor="lightblue" behavior="alternate" direction="ringht" style="font-size: ;35px">PAGINA WEB
+    <marquee bgcolor="lightblue" behavior="alternate" direction="ringht" style="font-size: 35px;">PAGINA WEB
         HIPERVINVULOS</marquee>
     <!-- Un anclaje interno-->
     <a name="INICIO"></a><br>
@@ -30,17 +36,17 @@
     <!-- Seccion videos embebidos-->
     <h2 align="center">SECCION DE REDES SOCIALES</h2>
 
-    <center><img src="img/facebook.jpeg" width="100" height="90" alt="facebook">
-        <img src="img/twitter.jpeg" width="100" height="90" alt="twitter">
-        <img src="img/instagram.jpeg" width="100" height="90" alt="instagram">
-    </center>
+    <img class="responsive" src="img/facebook.jpeg" width="100" height="90" alt="facebook">
+        <img class="responsive"src="img/twitter.jpeg" width="100" height="90" alt="twitter">
+        <img class="responsive"src="img/instagram.jpeg" width="100" height="90" alt="instagram">
+    
     <br><br><br>
     <hr>
     <!-- Seccion videos embebidos-->
     <h2 align="center">SECCION DE VIDEOS EMBEBIDOS</h2>
     <br>
-    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/rbuYtrNUxg4" frameborder="0"></iframe>
-    </center>
+    <iframe class="responsive" width="560" height="315" src="https://www.youtube.com/embed/rbuYtrNUxg4" frameborder="0"></iframe>
+    
     <br>
     <hr>
     <h3 align="center">PROGRAMAS DE DISEÑO GRAFICO</h3>
@@ -51,7 +57,7 @@
     </p>
     <br>
     <!-- Anclaje interno con imagenes-->
-    <center><a href="#INICIO"><img src="img/inicio.jpeg" width="80" height="70" alt="inicio"></a></center>
+    <a href="#INICIO"><img class="responsive" src="img/inicio.jpeg" width="80" height="70" alt="inicio"></a></center>
     <br>
 </body>
 

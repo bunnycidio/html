@@ -11,8 +11,8 @@ body {
     font-size: 18px;
 }
 #header {
-    background-color: lightsteelblue;
-    border: 2px solid blue;
+    background-color: rgb(230, 173, 245);
+    border: 2px solid rgb(96, 33, 109);
     border-radius: 20px 20px 10px 10px;
     display: flex;
     flex-direction: row;
@@ -36,8 +36,8 @@ a {
 }
 #menu{
     grid-area: nav;
-        background-color: blue;
-        border: 2px solid green;
+        background-color: rgb(232, 169, 252);
+        border: 2px solid rgb(129, 2, 40);
         border-radius: 22px;
         display: flex;
         flex-direction: row;
@@ -62,8 +62,8 @@ a {
 }
 #main {
     grid-area: main;
-    background-color: white;
-    border: 2px solid green;
+    background-color: rgb(253, 188, 255);
+    border: 2px solid rgb(128, 0, 28);
     max-width: 100%;
     height: auto;
 }
@@ -80,11 +80,11 @@ figcaption {
         width: 45%;
         height: 200px;
         position: relative;
-        border: 1px solid black;
+        border: 1px solid rgb(245, 0, 163);
         border-radius: 15px 15px;
     }
     section article {
-        background-color: lightcyan;
+        background-color: rgb(236, 173, 255);
         width: 200px;
         margin: 20px;
     }
@@ -101,8 +101,8 @@ figcaption {
     }
     #footer {
         grid-area: footer;
-        background-color: teal;
-        border: 2px solid green;
+        background-color: rgb(102, 30, 78);
+        border: 2px solid rgb(180, 20, 172);
         border-radius: 20px 20px 10px 10px;
         clear: both;
     }
@@ -164,7 +164,7 @@ figcaption {
             
             .fab {
             
-                color: white;
+                color: rgb(0, 0, 0);
             
                 border: 1px solid transparent;
             
@@ -213,7 +213,7 @@ figcaption {
             }
             .fa-bars {
                 font-size: 30px;
-                color: black;
+                color: rgb(0, 0, 0);
             }
             .openmenu {
                 display: none;
