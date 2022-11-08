@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1>CREAR UN ARRAYS POR CAPTURA</h1>
+<h3>METODO SPLICE - CICLO FOR</h3>    
+<script>   
+    //
+    let num;
+    let datos=new Array(); 
+    //
+    num=parseInt(prompt("Ingrese cantidad de elementos a ingresar a arrays"));
+    for (i=0;i<num;i++){
+    //recorre e imprime arrays
+        datos[i]=prompt("Ingrese datos al arrays.."+i);
+    }
+    // primero se busca número 15 con metodo indexOf, la posición del elemento a eliminar
+    let dator=prompt("ingrese dato a borrar");
+    var indice = datos.indexOf(dator);
+    // luego eliminas ese elemento usando splice:
+    if (indice > -1) {
+        var index = datos.splice(indice, 1);//Elimina dato del array
+            alert("elemento eliminado.... lista nueva:.." + datos);
+        }
+        else
+        {
+            alert("no se encontró elemento" );  
+        }
+        //imprimir arrays por pantalla
+        document.write(datos+",");
+        console.log(datos);
+</script>
+</body>
+</html> 

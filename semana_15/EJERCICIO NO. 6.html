@@ -1,0 +1,87 @@
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+</head>
+
+<body>
+
+<h1>******* MÉTODOS DATE Y SUBSTR *******</h1>
+
+<h2>PARA VALIDAR FECHA PAR O IMPAR CON PICO Y CEDULA</h2>
+
+<p id="date"></p>
+
+<p id="texto"></p>
+
+<script>
+
+//
+
+function fechahoy(){
+
+var fecha;
+
+fecha=new Date();
+
+document.write("HOY ES:&nbsp&nbsp");
+
+document.write(fecha.getDate()+"/");
+
+document.write(fecha.getMonth()+1+"/");
+
+document.write(fecha.getFullYear());
+
+//
+
+if (fecha.getDate()%2==0){
+
+document.getElementById("date").innerHTML="EL DIA DE HOY ES: PAR";
+
+}else{
+
+document.getElementById("date").innerHTML="EL DIA DE HOY ES: IMPAR";
+
+}
+
+return fecha;
+
+}
+
+// Se ejecuta función fechahoy
+
+fechahoy();
+
+//
+
+var doc_id;
+
+alert("*** BIENVENIDOS AL PROGRAMA PARA VERIFICAR SI SU DOC_IDENTIDAD ES PAR O IMPAR ***")
+
+doc_id=prompt("INGRESE SU NUMERO DE DOCUMENTO DE IDENTIDAD:");
+
+//Valida con el método substr(-1) el ultimo digito del documento de identidad
+
+dato=doc_id.substr(-1);
+
+var datosInt= parseInt(dato);
+
+//
+
+if (dato%2==0){
+
+document.getElementById("texto").innerHTML= "SU DOC_IDENTIDAD "+ " "+ doc_id +" "+ "ES PAR";
+
+} else{
+
+document.getElementById("texto").innerHTML= "SU DOC_IDENTIDAD"+ " "+ doc_id +" " + "ES IMPAR";
+
+}
+
+</script>
+
+</body>
+
+</html>

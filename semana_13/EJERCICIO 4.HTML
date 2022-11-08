@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de JavaScript</title>
+</head>
+<body>
+<script>
+    var prom=0;
+    var suma= 0;
+
+    var num_std=1;
+    //
+    while (num_std<=3){
+        nomstd=prompt('Ingrese nombre del estudiante','');
+        var num = 1;
+    while (num <= 3) {
+    //
+    nota=parseFloat(prompt('Ingrese nota de progración'+num,''));
+    //
+    suma += nota;
+    num ++;
+    }
+    num_std ++;
+    }
+    //
+    prom=suma/9;
+    //
+    document.write('*********'+'COLEGIO TECNOLOGICO SYSTEM PLUS:'+'*******'+'<br>'+'<br>');
+    document.write('***'+'BOLETIN NOTAS:'+'***'+'<br>'+'<br>');
+    document.write('PRMEDIO NOTAS GRUPO :&nbsp&nbsp&nbsp'+prom.toFixed());
+</script>    
+</body>
+</html>

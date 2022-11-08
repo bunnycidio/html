@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+</head>
+<body>
+<h1>SUPERMERCADO EL VACANO YA!!</h1>
+<h2>INGRESE SU COMPRA</h2>
+<script>
+ //Programa que permita capturar el nombre de un producto, su precio unitario y su cantidad, luego calcular total a pagar, muéstrelo por una mensaje de alerta al usuario, luego permita la captura del monto en efectivo pagado y validar cancelación total del monto de la factura, finalmente enviar mensaje Gracias por su compra//
+var total=0;
+var producto;
+var cantidad;
+var precio;
+// ENTRADA
+producto=prompt("Ingrese nombre producto:");
+precio=parseInt(prompt("Ingrese precio unitario:"));
+cantidad=parseInt(prompt("Ingrese cantidad comprada:"));
+//PROCESO
+total=cantidad*precio;
+//SALIDA
+alert("Su valor a pagar es ... " + "\n"+ total);
+document.write("Su valor a pagar es ... " + total + "<br>"+"<br>");
+//Validacion de monto a pagar
+pago=parseInt(prompt("Ingrese monto efectivo pagado:"));
+saldo=total-pago
+if (pago==total){
+    alert("TODO OK, GRACIAS POR SU COMPRA");
+}else if (pago<total) {
+    alert("FALTA DINERO PARA CANCELAR SU COMPRA...$" + saldo);
+}else{
+    alert("TOME SU CAMBIO POR SU COMPRA...$"+ saldo);
+}
+document.write("GRACIAS POR SU COMPRA");
+</script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EVENTOS MOUSE</title>
+
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="cubo-1" onmouseover="ocultarCubo1()" onmouseout="mostrarCubo1()">CUBO 1
+
+<figcaption>Pasa el mouse por encima del cubo</figcaption>
+
+</div>
+
+<div id="cubo-2" onmousedown="colorearCubo2()" onmouseup="descolorearCubo2()">CUBO 2
+
+<figcaption>Da clic sostenido y suelta en el cubo</figcaption>
+
+</div>
+
+<div id="cubo-3" ondblclick="animarCubo3()" onmouseout="retroCubo3()">CUBO 3
+
+<figcaption>Da dobleclic en el cubo</figcaption>
+
+</div>
+
+</div>
+
+<script>
+
+//PRIMER CUBO
+
+function ocultarCubo1()
+
+{
+
+document.getElementById("cubo-1").style.visibility="hidden";
+
+}
+
+function mostrarCubo1()
+
+{
+
+document.getElementById("cubo-1").style.visibility="visible";
+
+}
+
+//SEGUNDO CUBO
+
+function colorearCubo2()
+
+{
+
+document.getElementById("cubo-2").style.backgroundColor="yellow";
+
+}
+
+function descolorearCubo2()
+
+{
+
+document.getElementById("cubo-2").style.backgroundColor="red";
+
+}
+
+//TERCER CUBO
+
+function animarCubo3()
+
+{
+
+document.getElementById("cubo-3").style.transform="Rotate(45deg)";
+
+document.getElementById("cubo-3").style.transition="all 0.9s ease";
+
+}
+
+function retroCubo3()
+
+{
+
+document.getElementById("cubo-3").style.transform="Rotate(0deg)";
+
+document.getElementById("cubo-3").style.transition="all 0.8s ease";
+
+}
+
+</script>
+
+<style>
+
+#container{
+
+display: flex;
+
+flex-direction: row;
+
+justify-content:center;
+
+}
+
+div[id^="cubo"]{
+
+height: 150px;
+
+width: 150px;
+
+text-align: center;
+
+color:white;
+
+margin: 40px;
+
+}
+
+#cubo-1{
+
+background-color: blue;
+
+}
+
+#cubo-2{
+
+background-color: red;
+
+}
+
+#cubo-3{
+
+background-color: green;
+
+}
+
+</style>
+
+</body>
+
+</html>
