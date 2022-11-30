@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logon.png">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/juegos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Catalogo</title>
+</head>
+<body>
+    <div class="container">
+    <h1 class="col-12">Productos</h1>
+    <button id="bot_tarjetas" onclick="seleccioncarro('tarjetas')" class="botones_opciones">TARJETAS</button>
+    <button id="botcarro"onclick="seleccioncarro('tabla_carrito')" class="botones_opciones">CARRITO</button>
+    <header>
+        <img id="logo" src="../img/logon.png" alt="logo">
+        
+        <nav class="barranavegacion">
+                <a class="menu" href="principal.html">Inicio</a>
+                <a class="menu" href="juegos.html">Catalogo</a>
+                <a class="menu" href="juegos.html">Carrito</a>
+                <a id="login" class="sesion" href="../html/login.html">Ingresar</a>
+                <a id="sign" class="sesion" href="sign.html">Registrarse</a>
+        </nav>
+    </header>
+    <div id="filtrar" class="col-12 opciones tarjetas">
+        <h2 id="actfiltrar" style="cursor: pointer;" class="col-12" onclick="actfiltro()">Filtrar</h2> </div>
+    <div id="divfiltros" hidden>
+    <ol id="filtros" class="col-12" >
+        <li>
+            <button id="juego" style="cursor: pointer;" class="filtro active" onclick="seleccionfiltro('juego')">Todos</button>
+        </li>
+        <li>
+            <button id="accion" style="cursor: pointer;" class="filtro" onclick="seleccionfiltro('accion')">Accion</button>
+        </li>
+        <li>
+            <button id="multijugador" style="cursor: pointer;" class="filtro" onclick="seleccionfiltro('multijugador')">Multijugador</button>
+        </li>
+        <li>
+            <button id="carreras" style="cursor: pointer;" class="filtro" onclick="seleccionfiltro('carreras')">Carreras</button>
+        </li>
+    </ol>
+    </div>
+    <ul class="opciones tarjetas col-12">
+        <li class="juego accion multijugador">
+            <div >
+                <img class="img_juego" src="../img/juegos/gameboy.jpg" alt="gameboy">
+                <h2 class="nom_juego">
+                     Gameboy
+                </h2>
+                <h3 class="des_juego" hidden>
+                    SO: Windows 10 19H2 x64
+                       <br>
+                       <br>
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $80000</b>
+                </h3>
+                <button class="bot_agcarrito" >Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li  class="juego accion">
+            <div>
+                <img class="img_juego" src="../img/juegos/Nintendo-Game-Boy-Advance-Purple-FL.jpg" alt="GBA">
+                <h2 class="nom_juego">
+                    GBA
+                </h2>
+                <h3 class="des_juego" hidden>
+                     SO: Windows 10 19H2 x64
+                       <br>
+                       <br>
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $80000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego carreras multijugador">
+            <div>
+                <img class="img_juego" src="../img/juegos/gbacolor.jpg" alt="crash">
+                <h2 class="nom_juego">
+                     Gameboy Color
+                </h2>
+                <h3 class="des_juego" hidden>
+                    SO: Windows 10 19H2 x64
+                        <br>
+                       <br>
+                </h3>
+                <h3 class="pre_juego">
+                   <b> $80000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego accion multijugador">
+            <div>
+                <img class="img_juego" src="../img/juegos/n3ds.jpg" alt="gta">
+                <h2 class="nom_juego">
+                    Nintendo 3DS 
+                <h3 class="des_juego" hidden>
+                    SO: Windows 10 19H2 x64 <br>
+                       <br>
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $80000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego accion multijugador">
+            <div >
+                <img class="img_juego" src="../img/juegos/switch.jpg" alt="lol">
+                <h2 class="nom_juego">
+                    Nintendo Switch
+                </h2>
+                <h3 class="des_juego" hidden>
+                    SO: Windows 10 19H2 x64
+                       <br>
+                       <br>
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $80000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego multijugador">
+            <div >
+                <img class="img_juego" src="../img/juegos/gbjuegos.png" alt="mondongo">
+                <h2 class="nom_juego">
+                    cartuchos Game Boy
+                </h2>
+                <h3 class="des_juego" hidden>
+                    SO: Windows 10 19H2 x64
+                       <br>
+                       <br>
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $80000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego multijugador">
+            <div >
+                <img class="img_juego" src="../img/juegos/gbacartucho.jpg" alt="justdance">
+                <h2 class="nom_juego">
+                    Cartucho GBA/ GBA color
+                </h2>
+                <h3 class="des_juego" hidden>
+                    SO: Windows 10 19H2 x64
+                       <br>
+                       <br>Juego de estrategia por equipos en el que grupos de cinco campeones 
+                       se enfrentan para destruir la base del otro.Con un elenco de 140 
+                       campeones para realizar jugadas épicas y alzarte con la victoria.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $80000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego accion multijugador">
+            <div >
+                <img class="img_juego" src="../img/juegos/n3dscartucho.jpg" alt="pokemon">
+                <h2 class="nom_juego">
+                   Cartucho N3ds
+                </h2>
+                <h3 class="des_juego" hidden>
+                    SO: Windows 10 19H2 x64
+                       <br>
+                       <br>
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $80000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego multijugador carreras">
+            <div >
+                <img class="img_juego" src="../img/juegos/cartuchoswitch.jpg" alt="mariok">
+                <h2 class="nom_juego">
+                   Juegos switch
+                </h2>
+                <h3 class="des_juego" hidden>
+                    SO: Windows 10 19H2 x64
+                       <br>
+                       <br>
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $80000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+    </ul>
+    <div class="opciones tabla_carrito ocultas">
+        <table class="table">
+
+            <tr class="fila">
+          
+              <td ><span>#</span></td>
+          
+              <td class="producto"><span>Producto</span></td>
+          
+              <td ><span>Cantidad</span></td>
+
+              <td ><span>Precio unitario</span></td>
+
+              <td ><span>Subtotal</span></td>
+
+              <td ><span></span></td>
+          
+            </tr>
+        <tbody id="tbody">
+        </tbody>
+        </table>
+        <div id="seccion_total">
+            <div style="font-size: 2rem;">
+                <p>Total a pagar es: </p>
+                <p id="PAGO"></p>
+            </div>
+            <button id="bot_calcular" >Calcular total a pagar</button>
+        </div>
+    </div>
+    </div>
+    <footer class="col-12">
+        <p><i>Derechos reservados &copy; 20212023@Ricardo Monroy/Alejandra Ballesteros/ Alejandra Cano/ Janniniela Florez</i></p>
+    </footer>
+</body>
+
+<script src="../js/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="../js/barmenu.js"></script>
+<script src="../js/filtro.js"></script>
+<script src="../js/carrito.js"></script>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="../css/sign.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../img/logon.png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Formulario Registro</title>
+</head>
+<body>
+    <h1>REGISTRO</h1>
+    <header>
+            <img id="logo" src="../img/logon.png" alt="logo">
+            <nav class="barranavegacion">
+                    <a class="menu" href="principal.html">Inicio</a>
+                    <a class="menu" href="juegos.html">Catalogo</a>
+                    <a class="menu" href="juegos.html">Carrito</a>
+                    <a id="login" class="sesion" href="../html/login.html">Ingresar</a>
+                    <a id="sign" class="sesion" href="sign.html">Registrarse</a>
+            </nav>
+    </header>
+    <section class="container">
+        <div id="form">
+            <div class="superdiv">
+                <div class="form-control">
+                    <label for="regnom">Nombre</label>
+                    <input type="text" id="regnom" placeholder="Ingrese su nombre">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <br>
+                    <small>mensaje de error</small>
+                </div>
+                <div class="form-control">
+                    <label for="regap">Apellido</label>
+                    <input type="text" id="regap" placeholder="Ingrese su apellido">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <br>
+                    <small>mensaje de error</small>
+                </div>
+                <div class="form-control">
+                    <label for="regnum">Direccion de envio
+                    </label>
+                    <input type="text" id="regnum" placeholder="Ingrese la Direccion de residencia">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <br>
+                    <small>mensaje de error</small>
+                </div>
+                <div class="w-100 form-control">
+                    <label for="regcorr">Correo electronico</label>
+                    <input type="email" id="regcorr" placeholder="Ingrese su correo">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <br>
+                    <small>mensaje de error</small>
+                </div>
+                <div class="form-control">
+                    <label for="pass">Contraseña</label>
+                    <input type="password" id="pass" placeholder="Ingrese su contraseña">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <br>
+                    <small>mensaje de error</small>
+                </div>
+                <div class="form-control">
+                     <label for="conpass">Confirmacion de su contraseña</label>
+                    <input type="password" id="conpass" placeholder="Confirme su contraseña">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <br>
+                    <small>mensaje de error</small>
+                </div>
+                <center>
+                <button id="registro" class="w-100 btn btn-lg btn-primary boton" type="submit" onclick="validainputs()">Registrar</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p><i>Derechos reservados &copy; 20212023@Ricardo Monroy/Alejandra Ballesteros/ Alejandra Cano/ Janniniela Florez</i></p>
+    </footer>
+</body>
+<script src="../js/barmenu.js"></script>
+<script src="../js/validacionsign.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</html>

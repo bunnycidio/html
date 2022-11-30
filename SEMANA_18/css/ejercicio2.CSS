@@ -1,0 +1,60 @@
+h1
+{
+    text-align:center;
+    color: rgb(17, 197, 221);
+    font-size: 40px;
+}
+form{
+    margin:auto;
+    width: 800px;
+    height: 100%;
+}
+body
+{
+    background-color: rgb(22, 21, 133);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    }
+
+table
+{
+    border-color: rgb(4, 39, 240);
+    border-style: solid;
+    margin:inherit;
+    width: inherit;
+    position: absolute;
+    top: 200px;
+}
+table caption
+{
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    border-color: rgb(8, 8, 8);
+    border-style: solid;
+    background-color: rgb(84, 49, 129);
+}
+table th
+{
+    border-color: rgb(49, 2, 136);
+    border-style: solid;
+    background-color: rgb(134, 76, 172);
+    text-align: center;
+    font-size: 20px;
+}
+
+table td
+{
+    border-color: rgb(58, 1, 75);
+    border-style: solid;
+    text-align: center;
+}
+p
+{
+    font-weight: bolder;
+    font-size: 25px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}

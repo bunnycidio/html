@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Horizon;
+    src: url(../fuentes/Horizon.otf);
+}
+
+body{
+    background-image: url("../img/6.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#logo{
+    width: 230px;
+}
+div{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 80px;
+    top: 30px;
+    right: 5px;
+}
+a{
+    text-align: center;
+    font-family: Horizon;
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+a:link, a:visited{
+    color: #fff;
+}
+a:focus, a:hover{
+    color: #fff;   
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="shortcut icon" href="../img/logon.png">
+
+    <title>Carrito de compras</title>
+</head>
+<body>
+    <h1>Carrito de compras</h1>
+    <header>
+        <img id="logo" src="../img/logon.png" alt="logo">
+        
+        <nav class="barranavegacion">
+                <a class="menu" href="principal.html">Inicio</a>
+                <a class="menu" href="juegos.html">Catalogo</a>
+                <a class="menu" href="carrito.html">Carrito</a>
+                <a id="login" class="sesion" href="../html/login.html">Ingresar</a>
+                <a id="sign" class="sesion" href="sign.html">Registrarse</a>
+        </nav>
+    </header>
+
+    <!--______________________ALERTAS______________________________-->
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+          Producto removido!
+    </div>
+
+    <!--______________________TABLA______________________________-->
+
+    <section>
+        <table class="table">
+
+            <tr class="fila">
+          
+              <td ><span>#</span></td>
+          
+              <td class="producto"><span>Producto</span></td>
+          
+              <td ><span>Cantidad</span></td>
+
+              <td ><span>Precio unitario</span></td>
+
+              <td ><span>Subtotal</span></td>
+
+              <td ><span></span></td>
+          
+            </tr>
+        <tbody id="tbody">
+            <tr class="agregado">
+          
+                <td class="#"style="vertical-align : middle;">1</td>
+            
+                <td class="pro"><img class="img" src="../img/juegos/viego.jpg" alt=""><span class="nom"> THE RUINED KING </span></td>
+            
+                <td class="cantidad"style="vertical-align : middle;"><input type="number" name="cant" id="" class="cantidad"style="vertical-align : middle;"></td>
+  
+                <td class="preciou"style="vertical-align : middle;">$80.000</td>
+  
+                <td class="subtotal"style="vertical-align : middle;">$640.000</td>
+  
+                <td class="bot" style="vertical-align : middle;"> <a href="principal.html"><button class="borrar"><i class="fas fa-trash-alt"></i></button></a></td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="../js/barmenu.js"></script>
+<script src="../js/carro.js" type="module"></script>
+</html>

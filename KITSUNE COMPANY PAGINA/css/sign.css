@@ -1,0 +1,576 @@
+@font-face {
+    font-family: Horizon;
+    src: url(../fuentes/Horizon.otf);
+}
+body{
+    color: white;
+    background-image: url("../img/8.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    border: none;
+    
+}
+@media (min-width:1025px){
+    /*_____________TITULO_________*/
+    h1{
+        font-family: Horizon;
+        text-align: center;
+        font-size: 80px;
+        margin-bottom: 10px;
+    }
+    h2{
+        text-align: center;
+    }
+    /*____________________________CONTENIDO______________________________*/
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 40rem;
+        height: 42rem;
+        margin: 0px 60px 0px 60px;
+        background-image: linear-gradient(to top, #ca3d94 0%, #4a0964 50%, rgb(64, 48, 165) 100%);
+        border: none;
+        border-radius: 20px;
+    }
+    .form-control input{
+        display: block;
+        width: 35rem;
+        padding-bottom: 6px;
+        border: none;
+        background: none;
+        border-bottom: 1px solid rgb(0, 195, 255);
+        outline: none;
+        color: white;
+    }
+    .form-control input, .form-control label, .form-control button{
+        font-size: 20px;
+    }
+    .boton{
+        display: block;
+        width: 100%;
+    }
+    /*_________________CONTROL FORMULARIOS___________________*/
+    .form-control{
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .form-control i{
+            visibility: hidden;
+            position:absolute;
+            top:40%;
+            right: 10px;
+        }
+    .form-control input:focus{
+        display: block;
+        width: 99%;
+        padding-bottom: 6px;
+        border: none;
+        background: none;
+        border-bottom: 1px solid rgb(0, 195, 255);
+        outline: none;
+        color: white;
+    }
+    .form-control.success input{
+        border-color:springgreen;
+    }
+    .form-control.error input{
+        border-color:red;
+    }
+    .form-control.error textarea{
+        border-color:red;
+    }
+    .form-control.success textarea{
+        border-color:springgreen;
+    }
+    .form-control.success i.fa-check-circle{
+        color:lime;
+        visibility: visible;
+    }
+    .form-control.error i.fa-exclamation-circle{
+        color:red;
+        visibility: visible;
+    }
+    .form-control small{
+        color:red;
+        position: absolute;
+        bottom:0;
+        left:0;
+        visibility: hidden;
+    }
+    .form-control.error small{
+        visibility: visible;
+        text-align: center;
+    }
+    .form button{
+        border-radius: 4px;
+        display: block;
+        font-family: inherit;
+        padding:10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    /*_________________________FOOTER_______________________________________*/
+    footer p{
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    /*___________________________BARRA DE NAVEGACION_____________________*/
+    header{
+        display: flexbox;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+    #logo{
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background: rgba(149, 146, 146, 0.322);
+        width: 44px;
+        height: 54px;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 0 6px rgb(117 117 117 / 44%);
+    }
+    a{
+        color: #fff;
+        outline: none;
+        text-decoration: none;
+    }
+    a:link,nav a:visited{
+        color: #fff;
+    }
+    a:focus, a:hover{
+        color: darkslateblue;
+    }
+
+    .barranavegacion{
+        position: fixed;
+        top: 0;
+        width: 35%;
+        height: 100%;
+        background-image: linear-gradient(to top, hsl(323, 57%, 52%, 85%) 0%,
+        hsl(283, 83%, 21%,85%) 50%, rgba(64, 48, 165, 85%) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        left: 0;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        transform: translateX(-100%);
+    }
+    nav a{
+        font-size: 20px;
+    }
+
+    .spread{
+        position: fixed;
+        top: 0;
+        width: 35vw;
+        height: 100%;
+        background-image: linear-gradient(to top, hsl(323, 57%, 52%, 85%) 0%,
+        hsl(283, 83%, 21%,85%) 50%, rgba(64, 48, 165, 85%) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        left: 0;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        transform: translateX(0%);
+    }
+}
+@media (max-width:1024px){
+    /*_____________TITULO_________*/
+    h1{
+        font-family: Horizon;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    h2{
+        text-align: center;
+    }
+    
+    /*____________________________CONTENIDO______________________________*/
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 40rem;
+        height: 42rem;
+        margin: 0px 20px 0px 20px;
+        background-image: linear-gradient(to top, #ca3d94 0%, #4a0964 50%, rgb(64, 48, 165) 100%);
+        border: none;
+        border-radius: 20px;
+    }
+    .form-control input{
+        display: block;
+        width: 35rem;
+        padding-bottom: 6px;
+        border: none;
+        background: none;
+        border-bottom: 1px solid rgb(0, 195, 255);
+        outline: none;
+        color: white;
+    }
+    .form-control input, .form-control label, .form-control button{
+        font-size: 20px;
+    }
+    .boton{
+        display: block;
+        width: 100%;
+    }
+    /*_________________CONTROL FORMULARIOS___________________*/
+    .form-control{
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .form-control i{
+            visibility: hidden;
+            position:absolute;
+            top:40%;
+            right: 10px;
+        }
+    .form-control input:focus{
+        display: block;
+        width: 99%;
+        padding-bottom: 6px;
+        border: none;
+        background: none;
+        border-bottom: 1px solid rgb(0, 195, 255);
+        outline: none;
+        color: white;
+    }
+    .form-control.success input{
+        border-color:springgreen;
+    }
+    .form-control.error input{
+        border-color:red;
+    }
+    .form-control.error textarea{
+        border-color:red;
+    }
+    .form-control.success textarea{
+        border-color:springgreen;
+    }
+    .form-control.success i.fa-check-circle{
+        color:lime;
+        visibility: visible;
+    }
+    .form-control.error i.fa-exclamation-circle{
+        color:red;
+        visibility: visible;
+    }
+    .form-control small{
+        color:red;
+        position: absolute;
+        bottom:0;
+        left:0;
+        visibility: hidden;
+    }
+    .form-control.error small{
+        visibility: visible;
+        text-align: center;
+    }
+    .form button{
+        border-radius: 4px;
+        display: block;
+        font-family: inherit;
+        padding:10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    /*_________________________FOOTER_______________________________________*/
+    footer p{
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    /*_________________________BARRA DE NAVEGACION____________________*/
+    header{
+        display: flexbox;
+        width: 100%;
+        position: fixed;
+        z-index: 1000;
+    }
+    #logo{
+        position: fixed;
+        top: 30px;
+        left: 30px;
+        background: rgba(149, 146, 146, 0.322);
+        width: 60px;
+        height: 80px;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 0 6px rgb(117 117 117 / 44%);
+    }
+    body{
+        background-image: url("../img/8.jpg");
+        background-size: contain;
+        background-repeat:repeat;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    a{
+        color: #fff;
+        outline: none;
+        text-decoration: none;
+    }
+    a:link,nav a:visited{
+        color: #fff;
+    }
+    a:focus, a:hover{
+        color: darkslateblue;
+    }
+    .barranavegacion{
+        position: fixed;
+        top: 0;
+        width: 35%;
+        height: 100%;
+        background-image: linear-gradient(to top, hsl(323, 57%, 52%, 85%) 0%,
+        hsl(283, 83%, 21%,85%) 50%, rgba(64, 48, 165, 85%) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        left: 0;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        transform: translateX(-100%);
+    }
+    nav a{
+        font-size: 25px;
+    }
+
+    .spread{
+        position: fixed;
+        top: 0;
+        width: 35vw;
+        height: 100vh;
+        background-image: linear-gradient(to top, hsl(323, 57%, 52%, 85%) 0%,
+        hsl(283, 83%, 21%,85%) 50%, rgba(64, 48, 165, 85%) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        left: 0;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        transform: translateX(0%);
+    }
+}
+@media (max-width:768px){
+    /*_____________TITULO_________*/
+    h1{
+        font-family: Horizon;
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    h2{
+        text-align: center;
+    }
+    
+    /*___________________PERFILES_______________________*/
+    .perfil{
+        border: transparent;
+        background: none;
+        margin: 10px;
+    }
+    .perf{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .perfil img{
+        width: 40px;
+        height: 40px;
+    }
+    /*____________________________CONTENIDO______________________________*/
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 25rem;
+        height: 34rem;
+        margin: 0px 25px 0px 25px;
+        background-image: linear-gradient(to top, #ca3d94 0%, #4a0964 50%, rgb(64, 48, 165) 100%);
+        border: none;
+        border-radius: 20px;
+    }
+    .superdiv{
+        width: 85%;
+    }
+    .form-control input{
+        display: block;
+        width: 100%;
+        padding-bottom: 6px;
+        border: none;
+        background: none;
+        border-bottom: 1px solid rgb(0, 195, 255);
+        outline: none;
+        color: white;
+    }
+    .form-control input, .form-control label, .form-control button{
+        font-size: 20px;
+    }
+    .boton{
+        display: block;
+        width: 100%;
+    }
+    /*_________________CONTROL FORMULARIOS___________________*/
+    .form-control{
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .form-control i{
+            visibility: hidden;
+            position:absolute;
+            top:40%;
+            right: 10px;
+        }
+    .form-control input:focus{
+        display: block;
+        width: 99%;
+        padding-bottom: 6px;
+        border: none;
+        background: none;
+        border-bottom: 1px solid rgb(0, 195, 255);
+        outline: none;
+        color: white;
+    }
+    .form-control.success input{
+        border-color:springgreen;
+    }
+    .form-control.error input{
+        border-color:red;
+    }
+    .form-control.error textarea{
+        border-color:red;
+    }
+    .form-control.success textarea{
+        border-color:springgreen;
+    }
+    .form-control.success i.fa-check-circle{
+        color:lime;
+        visibility: visible;
+    }
+    .form-control.error i.fa-exclamation-circle{
+        color:red;
+        visibility: visible;
+    }
+    .form-control small{
+        color:red;
+        position: absolute;
+        bottom:0;
+        left:0;
+        visibility: hidden;
+    }
+    .form-control.error small{
+        visibility: visible;
+        text-align: center;
+    }
+    .form button{
+        border-radius: 4px;
+        display: block;
+        font-family: inherit;
+        padding:10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    /*_________________________FOOTER_______________________________________*/
+    footer p{
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    /*___________________________BARRA DE NAVEGACION_____________________*/
+    header{
+        display: flexbox;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+    }
+    #logo{
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background: rgba(149, 146, 146, 0.322);
+        width: 44px;
+        height: 54px;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 0 0 6px rgb(117 117 117 / 44%);
+    }
+    a{
+        color: #fff;
+        outline: none;
+        text-decoration: none;
+    }
+    a:link,nav a:visited{
+        color: #fff;
+    }
+    a:focus, a:hover{
+        color: darkslateblue;
+    }
+
+    .barranavegacion{
+        position: fixed;
+        top: 0;
+        width: 35%;
+        height: 100%;
+        background-image: linear-gradient(to top, hsl(323, 57%, 52%, 85%) 0%,
+        hsl(283, 83%, 21%,85%) 50%, rgba(64, 48, 165, 85%) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        left: 0;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        transform: translateX(-100%);
+    }
+    nav a{
+        font-size: 20px;
+    }
+
+    .spread{
+        position: fixed;
+        top: 0;
+        width: 35vw;
+        height: 100vh;
+        background-image: linear-gradient(to top, hsl(323, 57%, 52%, 85%) 0%,
+        hsl(283, 83%, 21%,85%) 50%, rgba(64, 48, 165, 85%) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        left: 0;
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+        transform: translateX(0%);
+    }
+
+}
